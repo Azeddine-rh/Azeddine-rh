@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   });
 
   await conn.sendMessage(m.chat, {
-    text: `*جاري تحميل* ${info.name}...\n\nسعيد انك تستعمل بوبيزة بوت وسأكون مسرورا 😄 إن انضممت لأنستغرامي\ninstagram.com/noureddine_ouafy`,
+    text: `*جاري تحميل* ${info.name}...\n\nسعيد انك تستعمل بوت عزالدين وسأكون مسرورا 😄 إن انضممت لأنستغرامي\ninstagram.com/amazighi_el`,
   });
 
   await conn.sendMessage(
@@ -42,7 +42,7 @@ async function apkinfo(url) {
   try {
     let icon = $.datalist.list[0].icon;
   } catch {
-    throw 'تعذر تحميل التطبيق انا اسفة';
+    throw 'تعذر تحميل التطبيق انا أسف';
   }
 
   let icon = $.datalist.list[0].icon;
@@ -60,7 +60,7 @@ async function apkinfo(url) {
     obb = false;
   }
 
-  if (!download) throw 'تعذر تحميل التطبيق انا اسفة';
+  if (!download) throw 'تعذر تحميل التطبيق انا أسف';
   return { obb, obb_link, name, icon, packageN };
 }
 
